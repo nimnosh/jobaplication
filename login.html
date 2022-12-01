@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/nim.css">
+    <title> log in</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="form">
+                <div class="login">
+                    <div class="login-header">
+                        <h3>LOGIN</h3>
+                        <p>Please enter username and password to login.</p>
+                    </div>
+                </div>
+                <form class="login-form" name="myForm" action="home.html" onsubmit="return validateForm()"
+                    onsubmit="return validatePass()">
+                    <input type="text" name="userName" placeholder="username" />
+                    <input type="password" name="password" placeholder="password" />
+                    <button>
+                        login
+                    </button>
+                    <input type="checkbox" checked="checked">Remember me
+                    <p class="message">Not registered? <a href="nosh.html">Create
+                            an account</a></p>
+                    Forgot <a href="nosh.html"> password? </a>
+                </form>
+            </div>
+        </div>
+        <script>
+            function validateForm() {
+                let x = document.forms["myForm"]
+                ["userName"].value;
+                if (x == "") {
+                    alert("Please enter user name");
+                    return false;
+                }
+
+            }
+            function validatePass() {
+                let x = document.forms["myForm"]
+                ["password"].value;
+                if (x == "") {
+                    alert("Please enter password");
+                    return false;
+                }
+
+            }
+        </script>
+    </body>
+</body>
+
+</html>
