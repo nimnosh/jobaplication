@@ -17,7 +17,7 @@
 }
 
 .leftmenu {
-  width: 11%;
+  width: 0;
   line-height: 100Px;
   float: left;
 }
@@ -32,8 +32,8 @@
 
 .rightmenu {
   height: 80Px;
-  float: center;
-  position: fixed;
+  float: left;
+  position: relative;
 }
 
 
@@ -63,7 +63,7 @@
 
 @media (max-width: 752px) {
   .rightmenu ul {
-    display: inline-block;
+    display: inline;
     font-family: 'montserrat', sans-serif;
     list-style: none;
     font-size: 10px;
@@ -76,6 +76,7 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+ 
 }
 
 #firstlist {
@@ -141,7 +142,7 @@
 .policy {
   background-color: rgb(105, 105, 105);
   color: #ffffff;
-  height: 100vh;
+  /*height: 100vh;*/
   text-align: center;
 }
 
